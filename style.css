@@ -1,0 +1,139 @@
+/* ===== General Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #222; /* Darker background to match the image */
+  color: #fff; /* Lighter text color for readability */
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background: #1e3a8a;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  color: #facc15;
+}
+
+/* ===== Sections ===== */
+section {
+  display: none;
+  padding: 20px;
+  background: #333; /* Darker background for sections */
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+section.active {
+  display: block;
+}
+
+h1, h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+/* ===== Forms ===== */
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, textarea, button {
+  margin-top: 6px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #555; /* Darker border */
+  background: #444; /* Darker input background */
+  color: white; /* Lighter text color */
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #1e3a8a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* ===== Pricing List ===== */
+#pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+#pricing li {
+  background: #444; /* Darker list item background */
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 5px solid #1e3a8a;
+  border-radius: 5px;
+}
+
+/* ===== Admin Section ===== */
+#admin ul {
+  list-style: none;
+  padding: 0;
+}
+
+#admin li {
+  background: #444; /* Darker list item background */
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 5px solid #facc15;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ===== Login Page ===== */
+#login form {
+  margin-top: 15px;
+}
+
+#loginMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Success & Error Messages */
+#loginMessage.success {
+  color: green;
+}
+
+#loginMessage.error {
+  color: red;
+}

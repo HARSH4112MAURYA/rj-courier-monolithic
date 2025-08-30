@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RJCouriers - Monolithic System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="navbar">
+        </ul>
+    </nav>
+
+    <section id="login" class="active">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label>Username:</label>
+            <input type="text" id="username" required>
+            <label>Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+    </section>
+
+    <section id="home">
+        <h1>Welcome to RJCouriers</h1>
+        <p>Fast, reliable, and secure courier services. We deliver your packages with care.</p>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Shipment</h2>
+        <form>
+            <label>Sender Name:</label>
+            <input type="text" required>
+            <label>Receiver Name:</label>
+            <input type="text" required>
+            <label>Pickup Address:</label>
+            <input type="text" required>
+            <label>Delivery Address:</label>
+            <input type="text" required>
+            <label>Package Weight (kg):</label>
+            <input type="number" required>
+            <button type="submit">Book Shipment</button>
+        </form>
+    </section>
+
+    <section id="tracking">
+        <h2>Track Package</h2>
+        <input type="text" placeholder="Enter Tracking ID">
+        <button>Track</button>
+        <p>Status: <strong>Pending</strong></p>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing Calculator</h2>
+        <form id="pricingForm">
+            <input type="number" id="weight" placeholder="Enter Weight (kg)" required>
+            <input type="number" id="distance" placeholder="Enter Distance (km)" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="priceOutput"></p>
+    </section>
+
+    <section id="support">
+        <h2>Customer Support</h2>
+        <form>
+            <label>Your Query:</label>
+            <textarea rows="4" placeholder="Enter your issue..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Panel</h2>
+        <p>Manage Shipments, Pricing, and Support Tickets from here.</p>
+        <ul>
+            <li>View All Shipments</li>
+            <li>Update Pricing</li>
+            <li>Respond to Support Tickets</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
